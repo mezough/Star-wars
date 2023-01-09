@@ -1,0 +1,94 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* --------------------------NAV-BAR-Start------------------------------- */
+
+.nav-bar{
+    background-image: url(images/fancy-pants.jpg);
+    background-size: cover;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 300px;
+    color: brown;
+
+}
+
+/* -----------LOGO------------------ */
+
+.nav-bar .logo{
+display: flex;
+width: auto;
+flex-direction: column;
+align-items: center;
+}
+.nav-bar img{
+    max-width: 150px;
+}
+.nav-bar .logo h1{
+    font-family: 'Press Start 2P', cursive;
+    color: aliceblue;
+}
+
+/* -----------MENUE------------------ */
+
+.menue{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.sith a{
+    text-decoration: underline 7px rgb(241, 15, 15);
+    color: aliceblue;
+    font-family: 'Press Start 2P', cursive;
+}
+.jedi a{
+    text-decoration: underline 7px rgb(255, 255, 255);
+    color: aliceblue;
+    font-family: 'Press Start 2P', cursive;
+}
+.rebels a{
+    text-decoration: underline 7px rgb(241, 15, 15);
+    color: aliceblue;
+    font-family: 'Press Start 2P', cursive;
+}
+.empire a{
+    text-decoration: underline 7px rgb(255, 255, 255);
+    color: aliceblue;
+    font-family: 'Press Start 2P', cursive;
+}
+.menue p{
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+color: rgb(205, 210, 214);
+font-size:x-large;
+}
+.menue a:hover{
+    color: rgb(148, 138, 145);
+}
+/* --------------------------NAV-BAR-End------------------------------- */
+                        /* -----hr----- */
+/* --------------------------Main-Start------------------------------- */
+
+.top-main{
+    background-image: url(images/WallpaperDog.jpg);
+    background-position: center;
+    background-size:cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    height: auto;
+}
+.top-main img{
+    background-color: rgba(224, 224, 224, 0.356);
+    border-radius: 50px;
+    max-width: 600px;
+}
+
+
+
