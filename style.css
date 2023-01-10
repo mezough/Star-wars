@@ -1,12 +1,17 @@
-body{
+body {
     margin: 0;
     padding: 0;
 }
 
-            /* --------------------------NAV-BAR-Start------------------------------- */
+hr {
+    border: 0;
+}
 
-.nav-bar{
+/* --------------------------NAV-BAR-Start------------------------------- */
+
+.nav-bar {
     background-image: url(images/fancy-pants.jpg);
+    background-attachment: fixed;
     background-size: cover;
     display: grid;
     justify-items: center;
@@ -18,100 +23,129 @@ body{
 
 }
 
-            /* -----------LOGO------------------ */
+/* -----------LOGO------------------ */
 
-.nav-bar .logo{
-display: flex;
-width: auto;
-flex-direction: column;
-align-items: center;
+.nav-bar .logo {
+    display: flex;
+    width: auto;
+    flex-direction: column;
+    align-items: center;
 }
-.nav-bar img{
+
+.nav-bar img {
     max-width: 150px;
 }
-.nav-bar .logo h1{
+
+.nav-bar .logo h1 {
     font-family: 'Press Start 2P', cursive;
     color: aliceblue;
 }
 
-            /* -----------MENUE------------------ */
+/* -----------MENUE------------------ */
 
-.menue{
+.menue {
     display: flex;
     width: 100%;
     justify-content: space-evenly;
 }
-.sith a{
+
+.sith a {
     text-decoration: underline 7px rgb(241, 15, 15);
     color: aliceblue;
     font-family: 'Press Start 2P', cursive;
 }
-.jedi a{
+
+.jedi a {
     text-decoration: underline 7px rgb(255, 255, 255);
     color: aliceblue;
     font-family: 'Press Start 2P', cursive;
 }
-.rebels a{
+
+.rebels a {
     text-decoration: underline 7px rgb(241, 15, 15);
     color: aliceblue;
     font-family: 'Press Start 2P', cursive;
 }
-.empire a{
+
+.empire a {
     text-decoration: underline 7px rgb(255, 255, 255);
     color: aliceblue;
     font-family: 'Press Start 2P', cursive;
 }
-.menue p{
-font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-color: rgb(205, 210, 214);
-font-size:x-large;
+
+.menue p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(205, 210, 214);
+    font-size: x-large;
 }
-.menue a:hover{
+
+.menue a:hover {
     color: rgb(148, 138, 145);
 }
+
 /* --------------------------NAV-BAR-End------------------------------- */
-                        /* -----hr----- */
+/* -----hr----- */
 /* --------------------------Main-Start------------------------------- */
 
-            /* -----------------top-main-------------------- */
-.top-main{
+/* -----------------top-main-------------------- */
+.top-main {
     background-image: url(images/WallpaperDog.jpg);
     background-position: center;
-    background-size:cover;
+    background-attachment: fixed;
+    background-size: cover;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     width: 100%;
     height: auto;
 }
-.top-main img{
-    background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.219), rgba(255, 255, 255, 0.548));
-    border-radius: 30px;
+
+.top-main img {
+    /* background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.219), rgba(255, 255, 255, 0.548)); */
+    border-radius: 50px;
     width: 100%;
     height: auto;
 }
+.red{
+    background-image: linear-gradient(to bottom right, rgba(226, 0, 0, 0.274), rgba(90, 53, 53, 0.192));
 
-            /* -----------------Media Q-------------------- */
+}
+.blue{
+    background-image: linear-gradient(to bottom right, rgba(0, 17, 255, 0.479), rgba(29, 9, 211, 0.116));
+
+}
+.brown{
+    background-image: linear-gradient(to bottom right, rgba(243, 149, 9, 0.479), rgba(236, 221, 9, 0.116));
+
+}
+.yellow{
+    background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.479), rgba(189, 189, 189, 0.116));
+
+}
+
+/* -----------------Media Q-------------------- */
 
 @media screen and (min-width: 600px) and (max-width:900px) {
     .top-main {
-    grid-template-columns: repeat(2, 1fr);
-    }
-}
-@media screen and (max-width: 599px) {
-    .top-main {
-    grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
-            /* -----------------Middle-main-------------------- */
-.middle-main{
+@media screen and (max-width: 599px) {
+    .top-main {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* -----------------Middle-main-------------------- */
+.middle-main {
     background-image: url(images/fancy-pants.jpg);
     width: 100%;
     height: auto;
     background-size: cover;
 }
-.middle-main p{
+
+.middle-main p {
     font-family: 'Press Start 2P', cursive;
     color: rgb(255, 255, 255);
     text-align: center;
@@ -120,7 +154,116 @@ font-size:x-large;
     margin: 0;
 }
 
+/* -----------------Bottom-main-------------------- */
 
+.bottom-main {
+    background-image: url(images/pattern.png);
+    background-size: contain;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "welcome latest-works flexible-pages"
+        "welcome our-products flexible-pages";
+    gap: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 
+.welcome {
+    grid-area: welcome;
+    margin-left: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.63);
+    border-radius: 10px;
+}
 
+.latest-works {
+    grid-area: latest-works;
+}
 
+.our-products {
+    grid-area: our-products;
+}
+
+.flexible-pages {
+    grid-area: flexible-pages;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 0;
+    /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+.bottom-main h2 {
+    color: rgb(255, 61, 2);
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.bottom-main span {
+    color: rgba(0, 0, 0, 0.658);
+    font-weight: bold;
+}
+
+.iframe-video {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/* -----------------Footer-------------------- */
+
+footer {
+    background-image: url(images/WallpaperDog.jpg);
+    background-position: top;
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    color: aliceblue;
+    padding: 40px;
+    gap: 30px;
+}
+
+.container h3 {
+    font-family: 'Coustard', serif;
+    font-weight: lighter;
+    font-size: x-large;
+    text-transform: capitalize;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-details span {
+    margin-left: 20px;
+    font-weight: lighter;
+    font-size: large;
+
+}
+
+.contact-us {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-us span {
+    display: block;
+}
+
+.email {
+    margin-bottom: 40px;
+}
+
+.perso4 {
+    width: 100%;
+    height: auto;
+}
+
+.widget {
+    display: inline-block;
+}

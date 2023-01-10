@@ -13,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Coustard&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="mini-style/css/all.min.css">
 </head>
 
 <body>
@@ -52,10 +53,10 @@
     <hr>
     <main>
         <div class="top-main">
-            <img src="images/perso-1.png" alt="">
-            <img src="images/perso-2.png" alt="">
-            <img src="images/perso-3.png" alt="">
-            <img src="images/perso-5.png" alt="">
+            <img class="red" src="images/perso-1.png" alt="">
+            <img class="blue" src="images/perso-2.png" alt="">
+            <img class="brown" src="images/perso-3.png" alt="">
+            <img class="yellow" src="images/perso-5.png" alt="">
         </div>
         <hr>
         <div class="middle-main">
@@ -69,7 +70,7 @@
         <div class="bottom-main">
             <div class="welcome">
                 <h2>Welcome</h2>
-                <p>Lorem ipsum dolor sit amet.</p>
+                <p><span>Lorem ipsum dolor sit amet.</span></p>
                 <img src="images/miniaturePerso.png" alt="">
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis quae in quidem saepe ipsam
                     pariatur hic culpa quia deleniti velit. ipsum dolor sit amet consectetur adipisicing elit. Et, odit.
@@ -79,23 +80,75 @@
 
             <div class="latest-works">
                 <h2>Latest Works</h2>
-                <p>Lorem ipsum dolor sit amet.</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis quae in quidem saepe ipsam pariatur hic culpa quia deleniti velit. ipsum dolor sit amet consectetur adipisicing elit. Et, odit.</p>
+                <p><span>Lorem ipsum dolor sit amet.</span></p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis quae in quidem saepe ipsam
+                    pariatur hic culpa quia deleniti velit. ipsum dolor sit amet consectetur adipisicing elit. Et, odit.
+                </p>
             </div>
 
             <div class="our-products">
                 <h2>Our Products</h2>
-                <p>Lorem ipsum dolor sit amet.</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis quae in quidem saepe ipsam pariatur hic culpa quia deleniti velit. ipsum dolor sit amet consectetur adipisicing elit. Et, odit.</p>
+                <p><span>Lorem ipsum dolor sit amet.</span></p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis quae in quidem saepe ipsam
+                    pariatur hic culpa quia deleniti velit. ipsum dolor sit amet consectetur adipisicing elit. Et, odit.
+                </p>
             </div>
 
             <div class="flexible-pages">
                 <h2>Flexible Pages</h2>
-                <p>Lorem ipsum dolor sit amet.</p>
-                <video controls width="500" autoplay="true" loop="loop" muted="muted" src="images/Star Wars： The Bad Batch ｜ Season 2 Teaser Trailer ｜ Disney .mp4"></video>
+                <p><span>Lorem ipsum dolor sit amet.</span></p>
+                <iframe class="iframe-video"
+                    src="images/Star Wars： The Bad Batch ｜ Season 2 Teaser Trailer ｜ Disney .mp4"
+                    frameborder="0"></iframe>
+                <!-- <video autoplay="true" loop="loop" muted="muted" src="images/Star Wars： The Bad Batch ｜ Season 2 Teaser Trailer ｜ Disney .mp4"></video> -->
             </div>
 
         </div>
+        <hr>
+
+        <footer>
+            <div class="container">
+                <div class="contact-details">
+                    <h3>contact details</h3>
+                    <div>
+                        <p> <i class="fa-solid fa-house"></i> <span>street Lorem ipsum dolor sit amet.</span> </p>
+                    </div>
+                    <div>
+                        <p><i class="fa-solid fa-phone"></i> <span>0033-123456789</span> </p>
+                    </div>
+                    <div>
+                        <p><i class="fa-solid fa-at"></i> <span>info@mezough.com</span> </p>
+                    </div>
+                    <div>
+                        <p><i class="fa-solid fa-truck-fast"></i> <span>support@me-t.com</span> </p>
+                    </div>
+                </div>
+                <div class="map">
+                    <h3>find us</h3>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5804.078070736247!2d5.372971128193695!3d43.33437222028466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c9c072c22232f1%3A0x5476f9617d9a748a!2sLes%20Arnavaux%2C%2013014%20Marseille!5e0!3m2!1sen!2sfr!4v1673346879409!5m2!1sen!2sfr"
+                        width="500" height="450" style="border: 1px;0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <div class="contact-us">
+                    <h3>contact us</h3>
+                    <div class="email"> <span><label for="email">Email</label></span>
+                        <input type="email" name="email" placeholder="Your Email..." id="email">
+                    </div>
+
+                    <div> <span><label for="subject">Subject</label></span>
+                        <input type="text" name="text" placeholder="Your Message..." id="subject">
+                    </div>
+                </div>
+                <div class="widget">
+                    <h3>widget footer</h3>
+                    <img src="images/casque1.jpg" alt="casque1">
+                    <img src="images/casque2.jpg" alt="casque2">
+                    <img class="perso4" src="images/perso-4.png" alt="casque3">
+                </div>
+            </div>
+        </footer>
 
     </main>
 </body>
