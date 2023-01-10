@@ -106,19 +106,23 @@ hr {
     width: 100%;
     height: auto;
 }
-.red{
+
+.red {
     background-image: linear-gradient(to bottom right, rgba(226, 0, 0, 0.274), rgba(90, 53, 53, 0.192));
 
 }
-.blue{
+
+.blue {
     background-image: linear-gradient(to bottom right, rgba(0, 17, 255, 0.479), rgba(29, 9, 211, 0.116));
 
 }
-.brown{
+
+.brown {
     background-image: linear-gradient(to bottom right, rgba(243, 149, 9, 0.479), rgba(236, 221, 9, 0.116));
 
 }
-.yellow{
+
+.yellow {
     background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.479), rgba(189, 189, 189, 0.116));
 
 }
@@ -129,6 +133,8 @@ hr {
     .top-main {
         grid-template-columns: repeat(2, 1fr);
     }
+    
+
 }
 
 @media screen and (max-width: 599px) {
@@ -266,4 +272,24 @@ footer {
 
 .widget {
     display: inline-block;
+}
+
+/* -------------Input------------- */
+input[type=textarea] {
+    height: 100px;
+    text-align: start;
+}
+
+input[type=submit] {
+    background-color: rgba(255, 255, 255, 0.774);
+    border: 0;
+    border-radius: 5px;
+    width: 100px;
+    margin-top: 20px;
+    height: 30px;
+    font-size: larger;
+}
+
+textarea {
+    background-color: rgba(255, 255, 255, 0.767);
 }
