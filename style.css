@@ -3,7 +3,7 @@ body{
     padding: 0;
 }
 
-/* --------------------------NAV-BAR-Start------------------------------- */
+            /* --------------------------NAV-BAR-Start------------------------------- */
 
 .nav-bar{
     background-image: url(images/fancy-pants.jpg);
@@ -14,12 +14,11 @@ body{
     width: 100%;
     height: 300px;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 300px;
     color: brown;
 
 }
 
-/* -----------LOGO------------------ */
+            /* -----------LOGO------------------ */
 
 .nav-bar .logo{
 display: flex;
@@ -35,7 +34,7 @@ align-items: center;
     color: aliceblue;
 }
 
-/* -----------MENUE------------------ */
+            /* -----------MENUE------------------ */
 
 .menue{
     display: flex;
@@ -74,21 +73,54 @@ font-size:x-large;
                         /* -----hr----- */
 /* --------------------------Main-Start------------------------------- */
 
+            /* -----------------top-main-------------------- */
 .top-main{
     background-image: url(images/WallpaperDog.jpg);
     background-position: center;
     background-size:cover;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
     width: 100%;
     height: auto;
 }
 .top-main img{
-    background-color: rgba(224, 224, 224, 0.356);
-    border-radius: 50px;
-    max-width: 600px;
+    background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.219), rgba(255, 255, 255, 0.548));
+    border-radius: 30px;
+    width: 100%;
+    height: auto;
 }
+
+            /* -----------------Media Q-------------------- */
+
+@media screen and (min-width: 600px) and (max-width:900px) {
+    .top-main {
+    grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width: 599px) {
+    .top-main {
+    grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+            /* -----------------Middle-main-------------------- */
+.middle-main{
+    background-image: url(images/fancy-pants.jpg);
+    width: 100%;
+    height: auto;
+    background-size: cover;
+}
+.middle-main p{
+    font-family: 'Press Start 2P', cursive;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 50px;
+    font-size: x-large;
+    margin: 0;
+}
+
+
 
 
 
