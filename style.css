@@ -1,6 +1,8 @@
 body {
     margin: 0;
     padding: 0;
+    width: 100%;
+    height: auto;
 }
 
 hr {
@@ -44,7 +46,7 @@ hr {
     width: 30%;
     height: auto;
     text-align: center;
-font-size: medium;
+    font-size: medium;
 }
 
 /* -----------MENUE------------------ */
@@ -53,28 +55,32 @@ font-size: medium;
     display: flex;
     width: 100%;
     height: auto;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     align-items: center;
 }
-.menue .sith p{
+
+.menue .sith p {
     width: auto;
     height: fit-content;
-    font-size:medium;
+    font-size: medium;
 }
-.menue .jedi p{
+
+.menue .jedi p {
     width: auto;
     height: fit-content;
-    font-size:medium;
+    font-size: medium;
 }
-.menue .rebels p{
+
+.menue .rebels p {
     width: auto;
     height: fit-content;
-    font-size:medium;
+    font-size: medium;
 }
-.menue .empire p{
+
+.menue .empire p {
     width: auto;
     height: fit-content;
-    font-size:medium;
+    font-size: medium;
 }
 
 .sith a {
@@ -109,7 +115,7 @@ font-size: medium;
     /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
     color: rgb(205, 210, 214);
     font-family: 'Sofia Sans Semi Condensed', sans-serif;
-font-weight: bold;
+    font-weight: bold;
 }
 
 .menue a:hover {
@@ -140,11 +146,11 @@ font-weight: bold;
 
 .red {
     background-image: linear-gradient(to right, rgba(226, 0, 0, 0.151), rgba(90, 53, 53, 0));
-margin: 20px;
+    margin: 20px;
 }
 
 .blue {
-    background-image: linear-gradient(to right , rgba(0, 17, 255, 0.151), rgba(29, 9, 211, 0));
+    background-image: linear-gradient(to right, rgba(0, 17, 255, 0.151), rgba(29, 9, 211, 0));
     margin: 20px;
 
 }
@@ -167,13 +173,16 @@ margin: 20px;
     .top-main {
         grid-template-columns: repeat(2, 1fr);
     }
- 
+
+}
+
 @media screen and (max-width: 599px) {
     .top-main {
         grid-template-columns: repeat(1, 1fr);
     }
 }
-}
+
+
 /* -----------------Middle-main-------------------- */
 .middle-main {
     background-image: url(images/fancy-pants.jpg);
@@ -197,6 +206,7 @@ margin: 20px;
     background-image: url(images/pattern.png);
     background-size: contain;
     width: 100%;
+    height: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -204,6 +214,7 @@ margin: 20px;
         "welcome our-products flexible-pages";
     gap: 20px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-left: 20px;
 }
 
 .welcome {
@@ -227,7 +238,11 @@ margin: 20px;
     overflow: hidden;
     width: 100%;
     padding-top: 0;
-    /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+video {
+    width: 100%;
+    height: auto;
 }
 
 .bottom-main h2 {
@@ -247,21 +262,54 @@ margin: 20px;
     height: 100%;
 }
 
-/* -----------------Footer-------------------- */
+/* -----------------Media Q-------------------- */
 
-footer {
-    background-image: url(images/WallpaperDog.jpg);
-    background-position: top;
-    background-size: cover;
-    background-position: center;
+@media screen and (min-width: 600px) and (max-width:900px) {
+    .bottom-main {
+        grid-template-columns: repeat(2, 1fr);
+        /* grid-template-rows: repeat(3, 1fr); */
+        grid-template-areas: "welcome latest-works latest-works"
+            "welcome our-products our-products"
+            "flexible-pages flexible-pages flexible-pages";
+    }
+
 }
 
+@media screen and (max-width: 599px) {
+    .bottom-main {
+        display: flex;
+        flex-flow: column;
+    }
+
+    .welcome {
+        padding: 0;
+        margin: 0;
+        border: 0;
+    }
+}
+
+/* -----------------Footer-------------------- */
+
+/* footer {
+    background-image: url(images/WallpaperDog.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: auto;
+} */
+
 .container {
+    background-image: url(images/WallpaperDog.jpg);
+    background-size: cover;
+    background-position: center;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     color: aliceblue;
-    padding: 40px;
-    gap: 30px;
+    gap: 15px;
+    max-width: 100%;
+    height: auto;
+    box-sizing: border-box;
+
 }
 
 .container h3 {
@@ -269,23 +317,34 @@ footer {
     font-weight: lighter;
     font-size: x-large;
     text-transform: capitalize;
+    width: 100%;
+    height: auto;
+    inline-size: 200px;
 }
 
 .contact-details {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    height: auto;
 }
 
 .contact-details span {
     margin-left: 20px;
     font-weight: lighter;
     font-size: large;
+    width: fit-content;
 
 }
 
 .contact-us {
+    /* display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 100px); */
     display: flex;
     flex-direction: column;
+    width: 100%;
+    height: auto;
 }
 
 .contact-us span {
@@ -296,17 +355,39 @@ footer {
     margin-bottom: 40px;
 }
 
-.perso4 {
+/* .perso4 {
+    max-width: 100%;
+    height: auto;
+} */
+
+.widget {
+    display: inline-block;
     width: 100%;
     height: auto;
 }
 
-.widget {
-    display: inline-block;
+/* -----------------Media Q-------------------- */
+
+@media screen and (min-width: 600px) and (max-width:900px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        justify-items: center;
+        padding: 20px;
+    }
+
 }
 
+@media screen and (max-width: 599px) {
+    .container {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 20px;
+    }
+}
+
+
 /* -------------Input------------- */
-input[type=textarea] {
+/* input[type=textarea] {
     height: 100px;
     text-align: start;
 }
@@ -323,4 +404,4 @@ input[type=submit] {
 
 textarea {
     background-color: rgba(255, 255, 255, 0.767);
-}
+} */
