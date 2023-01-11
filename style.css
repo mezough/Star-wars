@@ -17,10 +17,8 @@ hr {
     justify-items: center;
     align-items: center;
     width: 100%;
-    height: 300px;
-    grid-template-columns: 1fr 1fr;
-    color: brown;
-
+    height: auto;
+    grid-template-columns: 300px 1fr;
 }
 
 /* -----------LOGO------------------ */
@@ -30,15 +28,23 @@ hr {
     width: auto;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    height: auto;
 }
 
 .nav-bar img {
-    max-width: 150px;
+    width: 100px;
+    height: auto;
+    padding: 20px;
 }
 
 .nav-bar .logo h1 {
     font-family: 'Press Start 2P', cursive;
     color: aliceblue;
+    width: 30%;
+    height: auto;
+    text-align: center;
+font-size: medium;
 }
 
 /* -----------MENUE------------------ */
@@ -46,37 +52,64 @@ hr {
 .menue {
     display: flex;
     width: 100%;
-    justify-content: space-evenly;
+    height: auto;
+    justify-content:space-evenly;
+    align-items: center;
+}
+.menue .sith p{
+    width: auto;
+    height: fit-content;
+    font-size:medium;
+}
+.menue .jedi p{
+    width: auto;
+    height: fit-content;
+    font-size:medium;
+}
+.menue .rebels p{
+    width: auto;
+    height: fit-content;
+    font-size:medium;
+}
+.menue .empire p{
+    width: auto;
+    height: fit-content;
+    font-size:medium;
 }
 
 .sith a {
     text-decoration: underline 7px rgb(241, 15, 15);
     color: aliceblue;
     font-family: 'Press Start 2P', cursive;
+    font-size: large;
 }
 
 .jedi a {
     text-decoration: underline 7px rgb(255, 255, 255);
     color: aliceblue;
     font-family: 'Press Start 2P', cursive;
+    font-size: large;
 }
 
 .rebels a {
     text-decoration: underline 7px rgb(241, 15, 15);
     color: aliceblue;
     font-family: 'Press Start 2P', cursive;
+    font-size: large;
 }
 
 .empire a {
     text-decoration: underline 7px rgb(255, 255, 255);
     color: aliceblue;
     font-family: 'Press Start 2P', cursive;
+    font-size: large;
 }
 
 .menue p {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
     color: rgb(205, 210, 214);
-    font-size: x-large;
+    font-family: 'Sofia Sans Semi Condensed', sans-serif;
+font-weight: bold;
 }
 
 .menue a:hover {
@@ -95,35 +128,36 @@ hr {
     background-size: cover;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
     width: 100%;
     height: auto;
 }
 
 .top-main img {
-    /* background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.219), rgba(255, 255, 255, 0.548)); */
-    border-radius: 50px;
+    border-radius: 40px;
     width: 100%;
     height: auto;
 }
 
 .red {
-    background-image: linear-gradient(to bottom right, rgba(226, 0, 0, 0.274), rgba(90, 53, 53, 0.192));
-
+    background-image: linear-gradient(to right, rgba(226, 0, 0, 0.151), rgba(90, 53, 53, 0));
+margin: 20px;
 }
 
 .blue {
-    background-image: linear-gradient(to bottom right, rgba(0, 17, 255, 0.479), rgba(29, 9, 211, 0.116));
+    background-image: linear-gradient(to right , rgba(0, 17, 255, 0.151), rgba(29, 9, 211, 0));
+    margin: 20px;
 
 }
 
 .brown {
-    background-image: linear-gradient(to bottom right, rgba(243, 149, 9, 0.479), rgba(236, 221, 9, 0.116));
+    background-image: linear-gradient(to right, rgba(101, 85, 65, 0.400), rgba(236, 221, 9, 0));
+    margin: 20px;
 
 }
 
 .yellow {
-    background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.479), rgba(189, 189, 189, 0.116));
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.151), rgba(189, 189, 189, 0));
+    margin: 20px;
 
 }
 
@@ -133,16 +167,13 @@ hr {
     .top-main {
         grid-template-columns: repeat(2, 1fr);
     }
-    
-
-}
-
+ 
 @media screen and (max-width: 599px) {
     .top-main {
         grid-template-columns: repeat(1, 1fr);
     }
 }
-
+}
 /* -----------------Middle-main-------------------- */
 .middle-main {
     background-image: url(images/fancy-pants.jpg);
